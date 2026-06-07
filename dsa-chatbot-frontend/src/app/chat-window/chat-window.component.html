@@ -1,0 +1,24 @@
+<div class="chat-container">
+  <div class="chat-history">
+    @for (msg of messages; track msg) {
+    <div [ngClass]="msg.sender" class="message-bubble">
+      @if (msg.sender === 'bot' && msg.html) {
+      <div [innerHTML]="msg.html"></div>
+      } @else {
+      <div>{{ msg.text }}</div>
+      }
+    </div>
+    }
+
+    @if (loading) {
+    <div class="bot message-bubble">
+      <span class="typing">AI is thinking...</span>
+    </div>
+    }
+  </div>
+
+  <div class="input-area">
+    <input [(ngModel)]="userInput" (keyup.enter)="sendMessage()" placeholder="Ask a DSA question...">
+    <button (click)="sendMessage()">Send</button>
+  </div>
+</div>

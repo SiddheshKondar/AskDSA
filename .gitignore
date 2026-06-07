@@ -1,0 +1,7 @@
+
+node_modules/
+dsa-chatbot-backend/node_modules/
+dsa-chatbot-frontend/node_modules/
+node_modules/
+.env
+dsa-chatbot-backend/.env
