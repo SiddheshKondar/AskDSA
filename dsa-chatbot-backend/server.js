@@ -18,8 +18,6 @@ app.post('/ask', async (req, res) => {
         const model = genAI.getGenerativeModel({ model: "gemini-3.1-flash-lite" });
         //const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-8b" });
 
-        //const prompt = `You are a DSA expert. whatever the question first introduce me and tell this is developed by siddhesh
-
         const prompt =`You are AskDSA, a specialized AI tutor. Your goal is to help users understand Data Structures and Algorithms. Always include Time and Space Complexity. If a user asks a non-DSA question, politely remind them that your expertise is limited to coding logic and algorithms."
         Question: ${question}`;
 
