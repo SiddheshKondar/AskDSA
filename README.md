@@ -13,6 +13,6 @@ Optimized Performance: Implements the latest Gemini 3.5-Flash models for near-in
 
 
 Tech Stack:
-Frontend: Angular 18+, TypeScript, CSS3, RxJS.
+Frontend: Angular 22, TypeScript, CSS3, RxJS.
 Backend: Node.js, Express.js, Google Generative AI SDK.
 Security: Environment variable protection via dotenv and CORS policy management.
